@@ -1,0 +1,249 @@
+@import './base.css';
+
+#app {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-weight: normal;
+}
+
+/*----------------------------------*/
+/*-------GENERAL------*/
+body {
+  background-image: url(../assets/identity/fontv3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*-------CONTENIDO------*/
+.content-main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 1px rgba(130,130,130,0.1);
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+/*-------LOGO------*/
+.logo {
+  display: flex;
+  align-items:center;
+  gap:10px;
+}
+.logo .text {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 18pt;
+}
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+/*-------MENU------*/
+.menu {
+  width: 50%;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+  font-family: 'Belleza', sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+/*-------BOTONES------*/
+button.button-outline {
+  border:2px solid var(--primary);
+  border-radius: 50px;
+  color: var(--primary);
+  font-family: 'Belleza', sans-serif;
+  font-weight: 700;
+}
+button.button-outline:hover {
+  background-color: var(--primary);
+  color: white;
+}
+button.button-primary {
+  border:0;
+  background-color: var(--primary);
+  border-radius: 50px;
+  color: white;
+  font-family: 'Belleza', sans-serif;
+  font-weight: 500;
+  padding: 8px 35px;
+}
+button.button-primary:hover {
+  box-shadow: 0 0 5px 3px rgba(150,150,150,0.5);
+}
+
+/*-------TEXTO------*/
+p {
+  font-family: 'Bellota Text', cursive;
+  font-weight: 600;
+  line-height: 17pt;
+  font-size:14pt;
+}
+.display-title {
+  font-family: 'Belleza', sans-serif;
+  font-size:20pt;
+  font-weight: 500;
+  color: var(--primary);
+}
+.display-section {
+  font-family: 'Bellota Text', cursive;
+  font-weight: 700;
+  font-size:40pt;
+  padding:10px 0 22px;
+  color: var(--primary);
+}
+.display-banner {
+  font-family: 'Bellota Text', cursive;
+  font-weight: 700;
+  font-size:70pt;
+  line-height: 65pt;
+  padding:10px 0 22px;
+}
+
+/*---SWIPER---*/
+
+.slider {
+  width: 100%;
+  height: 700px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 3px solid var(--primary);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  opacity:0.6;
+}
+.swiperHome {
+  padding:3% 4%;
+}
+/*--slidecard--*/
+.slide-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide-card .content-text,
+.slide-card .content-image {
+  width: 50%;
+}
+.slide-card .content-image {
+  height: 100%;
+  padding:0 50px;
+}
+.slide-card .content-image div {
+  background: rgb(207,239,251);
+background: linear-gradient(0deg, rgba(207,239,251,0) 0%, rgba(207,239,251,0.34077380952380953) 36%, rgba(169,156,236,0.47522759103641454) 100%);
+  border-radius: 500px 500px 0 0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-card .content-image div img {
+  width: 100%;
+  height: auto;
+}
+.slide-card .content-text p {
+  width: 80%;
+}
+
+/*----OBJETOS----*/
+
+.spacer {
+  width: 100%;
+  padding:80px;
+}
+
+.card-primary {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 1px rgba(130,130,130,0.2);
+  padding:50px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.card-primary img {
+  width: 100%;
+  height: auto;
+}
