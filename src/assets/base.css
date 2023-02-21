@@ -5,6 +5,7 @@
   --tertiary: #FFF1FF;
   --text: #2C3D8D;
   --font: #FCF9E6;
+  --yellow: #FED873;
 }
 
 /* semantic color variables for this project 
@@ -43,13 +44,13 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  font-weight: normal;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: normal;
 }
 a:hover {
   filter: saturate(80%);
