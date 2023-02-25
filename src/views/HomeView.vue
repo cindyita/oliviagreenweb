@@ -190,6 +190,11 @@
         </div>
       </div>
     </div>
+
+    <div class="text-center mt-5 pt-2">
+      <button class="btn button-outline-g">Book a session</button>
+    </div>
+
   </div>
 
   <div class="spacer"></div>
@@ -300,12 +305,11 @@
         <div class="img-post"><img src="../assets/img/post/1.jpg"></div>
         <div class="img-post-text">
           <span class="text-mute">
-            <a href="#">News</a> | 
             <a href="#">Therapy</a> | 
-            <a href="#">Opinion</a>
+            <a href="#">Anxiety</a>
           </span>
-          <strong class="title text-start">Amet conse ctetur adipis icing elit</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
+          <strong class="title text-start">Understanding Anxiety: Symptoms, Causes and Treatment Options</strong>
+          <p>Anxiety can manifest in many different ways, including physical symptoms such as rapid heartbeat, sweating, and muscle tension[...]</p>
         </div>
         <div class="viewmore"><button class="btn button-outline">View more</button></div>
       </div>
@@ -315,10 +319,10 @@
           <span class="text-mute">
             <a href="#">News</a> | 
             <a href="#">Therapy</a> | 
-            <a href="#">Opinion</a>
+            <a href="#">Childhood</a>
           </span>
-          <strong class="title text-start">lorem ipsum ctetur adipis icing elit</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
+          <strong class="title text-start">Helping Children Cope: Strategies for Supporting</strong>
+          <p>As a parent, you want to do everything you can to support your child's mental health and well-being. Here are some strategies[...]</p>
         </div>
         <div class="viewmore"><button class="btn button-outline">View more</button></div>
       </div>
@@ -326,12 +330,11 @@
         <div class="img-post"><img src="../assets/img/post/3.jpg"></div>
         <div class="img-post-text">
           <span class="text-mute">
-            <a href="#">News</a> | 
             <a href="#">Therapy</a> | 
-            <a href="#">Opinion</a>
+            <a href="#">Group therapy</a>
           </span>
-          <strong class="title text-start">lorem ipsum dolor sit amet conse</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
+          <strong class="title text-start">How Group Therapy Can Help You Improve Your Mental Health</strong>
+          <p>Support and Validation from Peers: Group therapy provides a safe and supportive environment where you can connect[...]</p>
         </div>
         <div class="viewmore"><button class="btn button-outline">View more</button></div>
       </div>
@@ -340,11 +343,22 @@
         <div class="img-post-text">
           <span class="text-mute">
             <a href="#">News</a> | 
+            <a href="#">Study</a>
+          </span>
+          <strong class="title text-start">Study Shows the Power of Positive Thinking: Optimism</strong>
+          <p>A recent study published in the journal JAMA Network Open has found that a positive outlook on life may be linked to a lower risk of heart[...]</p>
+        </div>
+        <div class="viewmore"><button class="btn button-outline">View more</button></div>
+      </div>
+      <div class="card-secondary card">
+        <div class="img-post"><img src="../assets/img/post/6.jpg"></div>
+        <div class="img-post-text">
+          <span class="text-mute">
             <a href="#">Therapy</a> | 
             <a href="#">Opinion</a>
           </span>
-          <strong class="title text-start">lorem ipsum minus ullam conse</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
+          <strong class="title text-start">How Practicing Gratitude Can Improve Your Mental Health</strong>
+          <p>Gratitude has numerous benefits for mental health, including increased happiness, greater satisfaction with life[...]</p>
         </div>
         <div class="viewmore"><button class="btn button-outline">View more</button></div>
       </div>
@@ -354,23 +368,10 @@
           <span class="text-mute">
             <a href="#">News</a> | 
             <a href="#">Therapy</a> | 
-            <a href="#">Opinion</a>
+            <a href="#">Childhood</a>
           </span>
-          <strong class="title text-start">lorem ipsum sit amet conse ctetur</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
-        </div>
-        <div class="viewmore"><button class="btn button-outline">View more</button></div>
-      </div>
-      <div class="card-secondary card">
-        <div class="img-post"><img src="../assets/img/post/6.jpg"></div>
-        <div class="img-post-text">
-          <span class="text-mute">
-            <a href="#">News</a> | 
-            <a href="#">Therapy</a> | 
-            <a href="#">Opinion</a>
-          </span>
-          <strong class="title text-start">lorem ipsum adipis icing elit</strong>
-          <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Ipsum harum verit atis volupt atum reicie ndis minus ullam conse ctetur[...]</p>
+          <strong class="title text-start">Why Emotional Health in Childhood Matters</strong>
+          <p>Emotional health is an important aspect of overall well-being, and this is especially true in childhood. Children who have a strong emotional[...]</p>
         </div>
         <div class="viewmore"><button class="btn button-outline">View more</button></div>
       </div>
@@ -419,8 +420,8 @@
   <div class="spacer"></div>
 
   <div class="suscribe">
-    <div class="card-primary text-center">
-      <h1 class="display-section">
+    <div class="card-primary d-flex align-items-center">
+      <h1 class="display-section text-center">
         Suscribe our newsletter
         <p>For recieve the news of psychologist and new post alerts.</p>
       </h1>
@@ -591,8 +592,12 @@
   .form-contact form {
     width:50%;
   }
+
+  .suscribe .input-group {
+    width:70%;
+  }
   .suscribe input {
-    padding: 20px;
+    padding: 10px 20px;
     border-radius:35px;
     color: var(--primary);
     border: 2px solid var(--primary);

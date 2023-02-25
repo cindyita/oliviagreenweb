@@ -25,9 +25,99 @@
   </head>
   <body>
 
+    <div class="superior-banner" id="superior-banner">
+
+      <div>
+        <a href="https://virtualblux.com">
+          <i class="fa-solid fa-chevron-left"></i> Return to Virtual Blux
+        </a>
+      </div>
+      <div>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        The person named in this website and its content are entirely fictitious and have been created for demonstration purposes only.
+      </div>
+      <div>
+        <a href="#" onClick="closeBanner()">
+          I understand <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      
+    </div>
+
+    <button id="btn-top" onclick="scrollToTop()">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
     <div id="app"></div>
 
+    <style>
+      .superior-banner {
+        width:100%;
+        background-color: var(--primary);
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:5px;
+        color:white;
+      }
+      .superior-banner a {
+        color:#E14594;
+      }
+      #btn-top {
+        position: fixed;
+        bottom:20px;
+        right:20px;
+        z-index:999;
+        border:0;
+        background-color: var(--primary);
+        padding: 10px 14px 8px;
+        color:white;
+        border-radius:50%;
+        opacity: 0.7;
+      }
+      @media (max-width: 1024px){ /* laptop */
+        .superior-banner {
+          flex-direction: column;
+          justify-content: center;
+          text-align:center;
+          align-items:center;
+          gap:10px;
+          padding:10px;
+        }
+      }
+    </style>
+
     <script type="module" src="/src/main.js"></script>
+
+    <script>
+
+      function closeBanner() {
+        var banner = document.getElementById("superior-banner");
+        banner.classList.add("hidden");
+
+        setTimeout(function() {
+          banner.style.display = "none";
+        }, 150);
+      }
+
+
+      var btnTop = document.getElementById("btn-top");
+
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnTop.style.opacity = 0.7;
+        } else {
+          btnTop.style.opacity = 0;
+        }
+      };
+
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+
+    </script>
 
   </body>
 </html>

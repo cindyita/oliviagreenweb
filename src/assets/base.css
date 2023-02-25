@@ -1,4 +1,4 @@
-/* color palette from <https://github.com/vuejs/theme> */
+
 :root {
   --primary: #998be3;
   --secondary: #C1C1C1;
@@ -8,7 +8,7 @@
   --yellow: #FED873;
 }
 
-/* semantic color variables for this project 
+/* semantic color variables
 :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
@@ -44,7 +44,7 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 }
 
 a {
@@ -60,7 +60,7 @@ body {
   min-height: 100vh;
   color: var(--text);
   background: var(--font);
-  transition: color 0.5s, background-color 0.5s;
+  transition: color 0.3s, background-color 0.3s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
