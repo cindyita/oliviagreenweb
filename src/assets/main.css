@@ -351,6 +351,36 @@ hr {
 .circle-box:hover {
   background-color: var(--text);
 }
+/* INPUTS Y FORMS */
+.input {
+  border: 2px solid var(--primary);
+  background-color:transparent;
+  color: var(--primary);
+  width:100%;
+  padding:5px 15px;
+  border-radius: 25px;
+}
+.input:focus {
+  border: 2px solid var(--secondary);
+  outline: none;
+}
+
+.checkbox:checked {
+     background-color: var(--primary);
+     border-color: var(--primary);
+}
+.checkbox:focus {
+  border: 1px solid var(--primary);
+}
+.checkbox:focus, .checkbox, input:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+
 /*Special class*/
 .hidden {
   transform: translateY(-100%);
