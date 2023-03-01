@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: 'loading-component',
-    data() {
-        return {
-        count: 0
+        name: 'loading-component',
+        data() {
+            return {
+            count: 0
+            }
         }
-    }
     }
 </script>
 

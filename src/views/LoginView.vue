@@ -54,3 +54,11 @@
     }
   }
 </style>
+
+<script>
+  
+export default {
+  name: 'login-component',
+}
+
+</script>

@@ -266,7 +266,7 @@
 <script>
 
 export default {
-
+  name: 'about-component',
   data() {
     return {
       contadorId: 'contador',

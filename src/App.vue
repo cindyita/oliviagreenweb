@@ -2,14 +2,12 @@
   import { RouterLink, RouterView } from "vue-router";
   import footerComponent from '@/components/footerComponent.vue';
   import menuPrimaryComponent from '@/components/menuPrimaryComponent.vue';
-  import LoadingComponent from '@/components/LoadingComponent.vue';
 
   const title = "Olivia Green";
 </script>
 
 <template>
 
-  <!---<loading-component v-if="isLoading"></loading-component>---->
 
   <div class="content-main py-4 px-1 p-lg-5">
     <header class="d-flex px-4 px-lg-5 w-100 align-items-center justify-content-between">
@@ -49,7 +47,7 @@
     </div>
 
     <div class="content-all px-3 px-lg-5">
-      <transition name="slide-fade" mode="out-in">
+      <transition name="slide-fade">
 
         <router-view v-slot="{ Component }">
           <component :is="Component" />
@@ -64,39 +62,6 @@
   
 </template>
 
-<script>
-/*
-  export default {
-    components: {
-      LoadingComponent
-    },
-    data() {
-      return {
-        isLoading: false
-      }
-    },
-    methods: {
-      startLoading() {
-        this.isLoading = true;
-      },
-      stopLoading() {
-        this.isLoading = false;
-      }
-    },
-    mounted() {
-      this.$router.beforeEach((to, from, next) => {
-        this.startLoading();
-        next();
-      });
-
-      this.$router.afterEach(() => {
-        this.stopLoading();
-      });
-    }
-  }
-  */
-</script>
-
 <style scoped>
   header {
     padding-bottom: 25px;
@@ -110,7 +75,7 @@
   }
 
   .slide-fade-leave-active {
-    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+    transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
   }
 
   .slide-fade-enter-from,

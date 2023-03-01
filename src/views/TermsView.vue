@@ -5,3 +5,9 @@
   </div>
 
 </template>
+
+<script>
+  export default {
+    name: 'terms-component',
+  }
+</script>

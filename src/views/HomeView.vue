@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
 
@@ -218,7 +215,7 @@
           spaceBetween: 20,
         },
         '@1.00': {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         '@1.50': {
@@ -379,7 +376,7 @@
     </div>
     <br>
 
-    <button class="btn button-primary mt-5">View more posts</button>
+    <button class="btn button-primary mt-5">View all posts</button>
     
   </div>
 
@@ -613,11 +610,7 @@
   /*------------RESPONSIVE-------------*/
   /*-----------------------------------*/
 
-  @media (max-width: 1440px){ /* laptop */
-  
-  }
-
-  @media (max-width: 1400px){
+  @media (max-width: 1440px){
     .services-card {
       display:flex;
       justify-content: space-between;
@@ -700,7 +693,8 @@
   import "swiper/css/pagination";
   import { Autoplay, Pagination } from "swiper";
   
-  export default {
+export default {
+    name: 'home-component',
       components: {
           Swiper,
           SwiperSlide,
@@ -709,7 +703,7 @@
           return {
             modules: [Autoplay, Pagination],
           };
-        },
+        }
   };
 
 </script>
