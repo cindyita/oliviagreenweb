@@ -11,7 +11,7 @@
 
   <div class="content-main py-4 px-1 p-lg-5">
     <header class="d-flex px-4 px-lg-5 w-100 align-items-center justify-content-between">
-      <router-link to="/">
+      <router-link to="/" class="a-logo">
         <div class="logo">
           <img src="../src/assets/identity/icon-logo2.png">
           <div class="text d-none d-lg-flex">{{ title }}</div>
@@ -84,5 +84,8 @@
     opacity: 0;
   }
 
+  .a-logo:hover {
+    color:var(--primary);
+  }
 
 </style>

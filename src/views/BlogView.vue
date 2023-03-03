@@ -1,7 +1,7 @@
 
 <template>
 
-  <div class="blog py-5 w-100 d-flex justify-content-center align-items-center flex-column">
+  <div class="blog py-4 w-100 d-flex justify-content-center align-items-center flex-column">
     <span class="display-section">Blog</span>
       <br>
 

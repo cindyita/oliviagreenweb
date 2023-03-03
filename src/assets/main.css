@@ -286,7 +286,7 @@ hr {
   padding:80px;
 }
 
-.card-primary,.card-secondary {
+.card-primary,.card-secondary,.card-primary-ch {
   background-color: rgba(255,255,255,0.8);
   border-radius: 25px;
   backdrop-filter: blur(10px);
@@ -296,6 +296,16 @@ hr {
   flex-direction:column;
   gap:10px;
   position: relative;
+}
+.card-primary-ch {
+  padding:8px 0;
+  width: 100%;
+  margin: 8px 0;
+}
+.card-primary-ch.disabled {
+  background-color: rgba(180,180,180,0.3);
+  color: darkgrey;
+  text-decoration: line-through;
 }
 .card-primary img {
   width: 100%;
@@ -352,7 +362,7 @@ hr {
   background-color: var(--text);
 }
 /* INPUTS Y FORMS */
-.input {
+.input,.select,.textarea,.select option {
   border: 2px solid var(--primary);
   background-color:transparent;
   color: var(--primary);
@@ -360,7 +370,7 @@ hr {
   padding:5px 15px;
   border-radius: 25px;
 }
-.input:focus {
+.input:focus,.select:focus,.textarea:focus  {
   border: 2px solid var(--secondary);
   outline: none;
 }
