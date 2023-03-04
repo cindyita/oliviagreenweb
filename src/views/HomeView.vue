@@ -158,7 +158,7 @@
       <div class="row align-items-center justify-content-end how-it-works">
         <div class="col-6 text-end">
           <h5>Answer a form</h5>
-          <p>Answer a questionnaire that will help me to know a little more about you and prepare the session in the best way.</p>
+          <p>Check your email and answer a questionnaire that will help me to know a little more about you and prepare the session in the best way.</p>
         </div>
         <div class="col-2 text-center full">
           <div class="circle">2</div>
@@ -571,23 +571,8 @@
     top: calc(50% - 3px);
   }
   /*-----------------------------------*/
-  .testimonial-card p{
-    color:var(--primary);
-  }
-  .testimonial-card span {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    gap:10px;
-  }
-  .testimonial-card .fa-circle {
-    font-size: 5pt;
-  }
   .testimonialsSlider .card{
     width: 25%;
-  }
-  .form-contact form {
-    width:50%;
   }
 
   .suscribe .input-group {
@@ -661,9 +646,7 @@
     .testimonialsSlider .card{
       width: 70%;
     }
-    .form-contact form {
-      width:100%;
-    }
+
   }
   @media (max-width: 500px){ /* Mobile */
     .services-card .card-primary img {

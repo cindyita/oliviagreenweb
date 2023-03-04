@@ -440,6 +440,7 @@
         </div>
 
       </template>
+      <template #btn>Book</template>
     </modal-component>
   </Teleport>
 
@@ -449,9 +450,9 @@
 
 <style scoped>
 
-.modal {
-  display: block
-}
+  .modal {
+    display: block
+  }
 
   .swiper {
     width: 100%;
@@ -511,7 +512,7 @@
       nextDate6: new Date(Date.now() + (24*6) * 60 * 60 * 1000),
       nextDate7: new Date(Date.now() + (24*7) * 60 * 60 * 1000),
       nextDate8: new Date(Date.now() + (24*8) * 60 * 60 * 1000),
-      nextDate9: new Date(Date.now() + (24 * 9) * 60 * 60 * 1000),
+      nextDate9: new Date(Date.now() + (24*9) * 60 * 60 * 1000),
       nextDate10: new Date(Date.now() + (24*10) * 60 * 60 * 1000)
     }
   },

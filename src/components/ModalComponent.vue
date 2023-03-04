@@ -13,6 +13,9 @@ name: 'modal-component',
       <div class="modal-container">
         <div class="modal-header display-title">
           <slot name="header">Book a session</slot>
+          <span class="close-modal" @click="$emit('close')">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
         </div>
 
         <div class="modal-body">
@@ -25,7 +28,7 @@ name: 'modal-component',
                 <button
                 class="btn button-primary"
                 @click="$emit('close')"
-                >Book</button>
+                ><slot name="btn">Send</slot></button>
             </div>
             
           </slot>
@@ -36,6 +39,17 @@ name: 'modal-component',
 </template>
 
 <style>
+.modal-header {
+  position: relative;
+}
+.close-modal {
+  font-size: 12pt;
+  color: lightgrey;
+  cursor:pointer;
+  position: absolute;
+  top: 0;
+  right:0;
+}
 .modal-mask {
   position: fixed;
   z-index: 9998;

@@ -367,12 +367,16 @@ hr {
   background-color:transparent;
   color: var(--primary);
   width:100%;
-  padding:5px 15px;
+  padding:7px 15px;
   border-radius: 25px;
 }
 .input:focus,.select:focus,.textarea:focus  {
   border: 2px solid var(--secondary);
   outline: none;
+}
+.input::placeholder,.select::placeholder,.textarea::placeholder {
+  color: var(--primary);
+  font-size: 1rem;
 }
 
 .checkbox:checked {
@@ -397,6 +401,39 @@ hr {
   transition: transform 0.5s ease-out;
 }
 
+/*testimonial*/
+
+.testimonial-card p{
+  color:var(--primary);
+}
+.testimonial-card span {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap:10px;
+}
+.testimonial-card .fa-circle {
+  font-size: 5pt;
+}
+
+/*accordion*/
+.accordion .card {
+  border:0;
+  background-color: inherit;
+}
+.accordion .card .card-header {
+  background-color: rgba(255,255,255,0.5);
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  color: var(--primary);
+}
+.accordion .card a,.accordion .card a:active,.accordion .card a:focus {
+  border:0;
+}
+  .form-contact form {
+    width:50%;
+  }
+
 /*-----------------------------------*/
 /*------------RESPONSIVE-------------*/
 /*-----------------------------------*/
@@ -415,6 +452,7 @@ hr {
   .swiperHome {
     padding:3% 0 0;
   }
+
 }
 
 @media (max-width: 1024px){ /* laptop */
@@ -436,6 +474,10 @@ hr {
   .slide-card .content-image {
     padding:0;
   }
+    .form-contact form {
+    width:100%;
+  }
+
 }
 
 @media (max-width: 760px){ /* tablet CH Mobile G */

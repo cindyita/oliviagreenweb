@@ -35,8 +35,9 @@ export default {
 
     </div>
 
-    <div class="p-4 d-flex gap-5 justify-content-center align-items-center text-center">
-      Olivia Green Psycology @ 2023
+    <div class="p-4 d-flex flex-column gap-2 justify-content-center align-items-center text-center">
+      <span>Olivia Green Psycology @ 2023</span>
+      <span><router-link to="/terms">Privacy Policy</router-link></span>
     </div>
 
   </footer>
