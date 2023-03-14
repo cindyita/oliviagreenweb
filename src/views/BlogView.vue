@@ -117,7 +117,9 @@
 
 </style>
 
+
 <script>
+
   export default {
     name: 'blog-component',
       data() {
@@ -157,5 +159,6 @@
         }
       }
     }
-  }
+}
+
 </script>
